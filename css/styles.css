@@ -116,6 +116,26 @@ h1 {
 }
 
 
+@media (width>=768px) {
+    .estudiante {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: auto;
+    }
+
+    .mi-imagen {
+        margin-top: 0px;
+        border-radius: 0;
+    }
+    .imagen-autor{
+        aspect-ratio: 3/4;
+        width: 100%;
+    }
+
+
+}
+
+
 /*!Acerca de mi  */
 .acerca-estudiante {
     background-color: var(--color-fondo);
@@ -124,6 +144,12 @@ h1 {
 
 }
 
+@media (width >=768px ) {
+    
+    .acerca-estudiante {
+        border-radius: 0;
+    }
+}
 .contenedor-estudiante {
     display: flex;
     flex-direction: column;
