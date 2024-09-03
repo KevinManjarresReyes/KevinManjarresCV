@@ -1,0 +1,124 @@
+:root {
+    --blanco: #fff;
+    --fuentePrincipal: "Nerko One", cursive;
+    --fuenteAlterna: "Handjet", sans-serif;
+    /* --color-aquamarine: #7FFFD4;
+    --color-coral: #FF7F50;
+    --color-midnight-blue: #191970;
+    --color-light-salmon: #FFA07A;
+    --color-pale-goldenrod: #EEE8AA;
+
+ */
+
+
+
+
+
+    --color-primario: #2A9D8F;
+    --color-secundario: #264653;
+    --color-acento: #E76F51;
+    --color-fondo: #F4A261;
+    --color-texto: #1D3557;
+    --color-fondo-claro: #F1FAEE;
+
+}
+
+
+.centrar-texto {
+    text-align: center;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-weight: 600;
+    background-color: var(--color-fondo-claro);
+}
+
+.padre {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/*!Nav*/
+
+.siempre {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--color-acento);
+}
+
+.siempre__nav,
+.siempre__nombre {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*! Main */
+h1 {
+
+    text-transform: uppercase;
+}
+
+
+.sobre-mi__parrafo {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mi-descripcion {
+    display: flex;
+
+}
+
+.descripcion__parrafo {
+    font-family: var(--fuenteAlterna);
+}
+
+.imagen-autor {
+    width: 70%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+.mi-imagen {
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+}
+
+
+/*!Acerca de mi  */
+.acerca-estudiante {
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    padding-bottom: 20px;
+
+}
+
+.contenedor-estudiante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.estudiante__caracteristica p {
+    font-family: var(--fuenteAlterna);
+}
