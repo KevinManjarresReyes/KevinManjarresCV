@@ -122,3 +122,17 @@ h1 {
 .estudiante__caracteristica p {
     font-family: var(--fuenteAlterna);
 }
+
+
+/* !mi historia */
+
+
+
+
+.mi-historia{
+    background-color: var(--color-primario);
+    border-radius: 10px;
+}
+.mi-historia__contenedor{
+    padding: 10px;
+}
