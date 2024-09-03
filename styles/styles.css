@@ -1,0 +1,64 @@
+:root {
+    --blanco: #fff;
+    --fuentePrincipal: "Nerko One", cursive;
+    --fuenteAlterna: "Handjet", sans-serif;
+    --color-primario: #00e5f5;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-weight: 600;
+    background-color: var(--color-primario);
+}
+
+.padre {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/*!Nav*/
+
+.siempre {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.siempre__nav,
+.siempre__nombre {
+    height: 100%;
+    width: 20%;
+    background-color: red;
+}
+
+
+
+/*! Main */
+h1 {
+
+    text-transform: uppercase;
+}
+
+
+.sobre-mi__parrafo {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mi-descripcion {
+    display: flex;
+
+}
+
+.descripcion__parrafo {
+    font-family: var(--fuenteAlterna);
+}
