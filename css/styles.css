@@ -2,19 +2,19 @@
     --blanco: #fff;
     --fuentePrincipal: "Nerko One", cursive;
     --fuenteAlterna: "Handjet", sans-serif;
-    
+
     --color-primario: #2A9D8F;
     --color-secundario: #264653;
     --color-acento: #E76F51;
     --color-fondo: #F4A261;
     --color-texto: #1D3557;
     --color-fondo-claro: #F1FAEE;
-
 }
 
-.upper{
+.upper {
     text-transform: uppercase;
 }
+
 .centrar-texto {
     text-align: center;
 }
@@ -50,11 +50,17 @@ li {
 .siempre {
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 120px;
     justify-content: space-between;
     width: 100%;
     border-radius: 2px;
     background-color: var(--color-acento);
+}
+
+.siempre__nombre h2 {
+    color: var(--blanco);
+    font-size: 30px;
+    text-transform: capitalize;
 }
 
 .siempre__nav,
@@ -66,6 +72,9 @@ li {
     align-items: center;
 }
 
+.siempre__nombre {
+    width: 30%;
+}
 
 
 /*! Main */
@@ -214,5 +223,42 @@ h1 {
     color: var(--blanco);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.form__list li input {
+
+
+    font-size: 30px;
+}
+
+
+.form__list li textarea :first-of-type {
+    width: 100%;
+}
+
+@media (width >=768px) {
+    .form__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 25px
+    }
+
+    .form__list li:nth-child(3) {
+        grid-column: 1/3;
+
+    }
+
+    .form__list li:last-of-type {
+        grid-column: 1/3;
+    }
+
+
+    .form__list li input {
+
+
+        font-size: 20px;
+    }
+}
+
 
 /*!footer  */
