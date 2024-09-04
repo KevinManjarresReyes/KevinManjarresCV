@@ -68,6 +68,11 @@ li {
     color: var(--blanco);
     font-size: 30px;
     text-transform: capitalize;
+
+}
+
+.siempre__nombre {
+    margin-left: 20px;
 }
 
 .siempre__nav,
@@ -164,6 +169,12 @@ h1 {
         align-items: center;
     }
 
+    .sobre-mi {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
 /*!Acerca de mi  */
@@ -204,6 +215,15 @@ h1 {
     display: block;
 }
 
+.mi-historia--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.mi-historia__svg {
+    grid-row: 4/5;
+}
 
 .mi-historia {
     background-color: var(--color-primario);
@@ -220,7 +240,6 @@ h1 {
 @media (width>=768px) {
 
     .mi-historia--grid {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
@@ -269,6 +288,13 @@ h1 {
     }
 
 
+}
+@media (min-width: 768px) {
+    .mi-historia__title{
+        font-size: 60px;
+        margin-bottom: none;
+        padding-bottom: none;
+    }
 }
 
 /* !habilidades */
